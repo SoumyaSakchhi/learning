@@ -30,11 +30,9 @@ const subject_marks = {
   }
   
   const output = {};
-  // const marksArray= [0, 0, 0, 0, 0];
   
   for (let subject in subject_marks) {
     let students = subject_marks[subject];
-    // let i= 0;
   
     for (let student in students) {
       const marks = students[student];
@@ -47,12 +45,8 @@ const subject_marks = {
         output[student] = { "total": marks };
         output[student][subject] = marks;
   
-  
       }
-      // marksArray[i]+= marks;
-      // i+= 1; 
-      // output[y]= output[y] || {};
-      // output[y][x]= marks;
+      
     }
   }
   
