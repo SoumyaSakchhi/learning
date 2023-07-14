@@ -1,0 +1,40 @@
+[
+    {
+      "id": "aN472KG7L",
+      "educationalInfo": [
+        {
+          "collegeName": "Delhi University",
+          "highestDegree": "B.Tech",
+          "grade": "A",
+          "yearOfPassing": "2022"
+        }
+      ],
+      "personalInfo": [
+        {
+          "name": "Divya",
+          "surname": "Choudhary",
+          "phoneNo": "987567543",
+          "emailID": "divya.choudhary4@gmail.com"
+        }
+      ]
+    },
+    {
+      "id": "sBUFCEQ4g",
+      "educationalInfo": [
+        {
+          "collegeName": "Delhi University",
+          "highestDegree": "M.Tech",
+          "grade": "A",
+          "yearOfPassing": "2020"
+        }
+      ],
+      "personalInfo": [
+        {
+          "name": "Dhruv",
+          "surname": "Sharma",
+          "phoneNo": "765438901",
+          "emailID": "dhruv.sharmab78@gmail.com"
+        }
+      ]
+    }
+  ]

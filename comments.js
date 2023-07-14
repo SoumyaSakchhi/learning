@@ -1,61 +1,52 @@
-// if(count== values.length)
-	// 	return res.send({"Message": "Credentials Added Successfully."});
-	
-	// try {
-	// 	const username = req.body.username;
-	// 	const password = req.body.password;
+// for(let i in eduInfo){
+		// 	const collegeName= eduInfo[i].collegeName;
+		// 	const highestDegree= eduInfo[i].highestDegree;
+		// 	const grade= eduInfo[i].Grade;
+		// 	const yearOfPassing= eduInfo[i].yearOfPassing;
+		// 	console.log(collegeName+ " "+ highestDegree+ " "+ grade+ " "+ yearOfPassing);
+		// 	// if( !eduInfo[i].highestDegree || !eduInfo[i].Grade || !eduInfo[i].yearOfPassing){
+		// 	// 	// console.log("Missing Educational Information.");
+		// 	// 	// console.log(eduInfo[i]);
+		// 	// 	// return res.send({"Message": "Missing Educational Information."});
+		// 	// 	console.log(eduInfo[i]);
+		// 	// }
+		// 	// console.log(eduInfo[i]);
+		// }
 
-	// 	if (!fs.existsSync('./credentials')) {
-	// 		fs.mkdirSync('./credentials');
-	// 	}
+		// for(let i in personalInfo){
+		// 	if(!personalInfo[i].name || !personalInfo[i].surname || !personalInfo[i].phone_no || !personalInfo[i].emailID){
+		// 		console.log("Missing Personal Information.");
+		// 		return res.send({"Message": "Missing Personal Information."});
+		// 	}
+		// }
 
-	// 	let fileData = [];
+// if(flag1=== true && flag2=== true){
+				// 	console.log("User Added Successfully.");
+				// 	return res.send({"Message": "User Added Successfully."})
+				// }
+				// else{
+				// 	console.log("User could not be added.");
+				// 	return res.send({"Message": "User could not be added."});
+				// }
 
-	// 	if (fs.existsSync('./credentials/creds.json')) {
-	// 		fileData = fs.readFileSync('./credentials/creds.json', { encoding: 'utf8' });
-	// 		fileData = JSON.parse(fileData);
-	// 	}
+// let user_info= fs.readFileSync("./userParticulars/user_info.json", "utf-8");
+		// let user_details= fs.readFileSync("./userParticulars/user_details.json", "utf-8");
+		// user_info= JSON.parse(user_info);
+		// user_details= JSON.parse(user_details);
 
-	// 	if (fileData.length) {
-	// 		const isExist = fileData.find((data) => {
-	// 			return data.username === username;
-	// 		})
+		// for(let i of user_info){
+		// 	const obj= {};
+		// 	const id= i.id;
+		// 	for(let j of user_details){
+		// 		if(i.id== j.id){
+		// 			obj["username"]= i.username;
+		// 			obj["educational_info"]= j.educational_info;
+		// 			obj["personalInfo"]= j.personalInfo;
+		// 			response.push(obj);
+		// 			break;
+		// 		}
+		// 	}
+		// }
 
-	// 		if (isExist) {
-	// 			console.log("User Already Exists");
-	// 			return res.send(`{"Message": "User Already Exists."}`);
-	// 		}
-	// 	}
-
-	// 	bcrypt.genSalt(saltRounds, (err, salt) => {
-	// 		if (err) {
-	// 			return res.send('Salt Error => ', err)
-	// 		}
-	// 		bcrypt.hash(password, salt, (err, hash) => {
-	// 			if (err) {
-	// 				console.log(err);
-	// 				return res.send('hash error => ', err)
-	// 			}
-	// 			fileData.push({
-	// 				username,
-	// 				password: hash,
-	// 				salt
-	// 			});
-	// 			const data = JSON.stringify(fileData, null, 2);
-	// 			fs.writeFile('./credentials/creds.json', data, (err) => {
-	// 				if (err) {
-	// 					console.log(err);
-	// 					return res.send("ERROR!");
-	// 				}
-	// 				else {
-	// 					console.log("User Added Successfully.");
-	// 					return res.send(`{"Message": "Credentials Added Successfully"}`);
-	// 				}
-	// 			})
-	// 		});
-	// 	})
-
-	// } catch (e) {
-	// 	res.send(e);
-	// 	console.log(e);
-	// }
+// async await
+// In an async function, you can await any Promise or catch its rejection cause.
