@@ -1,1 +1,0 @@
-sudo apt-get install -y mongodb-org=6.0.7 mongodb-org-database=6.0.7 mongodb-org-server=6.0.7 mongodb-org-mongos=6.0.7 mongodb-org-tools=6.0.7
