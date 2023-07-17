@@ -1,63 +1,72 @@
-const collection1 = require("../models/credentials.js");
-const collection2 = require("../models/educationalInfo.js");
-const collection3 = require("../models/userDetails.js");
+// console.log("User Added Successfully.");
+		// return res.send({"Message": "User Added Successfully."});
 
-exports.getAll = async (req, res) => {
-	const response = [];
-	try {
-		// collection1.credentials.aggregate([
-		// 	{
-		// 		$lookup: {
-		// 			"from": "collection2.educationalInfo",
-		// 			"let": {"eID": "$_id"},
-		// 			"pipeline": [
-		// 				"$match": {"$expr": {"$eq": ["$uniqueID", "$$eID"]}},
-		// 				$lookup: {
+		// user1.save().then(() => {
+		// 	const user2 = new collection2.userDetails({
+		// 		id,
+		// 		educationalInfo: eduInfo,
+		// 		personalInfo
+		// 	})
+		// 	user2.save().then(() => {
+		// 		console.log("User Added Successfully.");
+		// 		return res.send({ "Message": "User Added Successfully." });
+		// 	}).catch(e => {
+		// 		console.log(e);
+		// 		return res.send({ Message: JSON.stringify(e) });
+		// 	})
+		// }).catch(e => {
+		// 	console.log(e);
+		// 	return res.send({ Message: JSON.stringify(e) });
+		// })
 
-		// 				}
-		// 			]
-		// 		}
-		// 	}
-		// ])
-		// const obj= {};
-		// collection1.credentials.aggregate([
-		// 	from: collection2.educationalInfo,
-		// 	localField: "_id",
-		// 	foreignField: "uniqueID",
-		// 	as: 
-		// ])
+// const user2= new collection2.userDetails({
+		// 	id,
+		// 	educationalInfo: eduInfo,
+		// 	personalInfo
+		// })
+		// user2.save().then(()=> {
+		// 	console.log("User Added Successfully.");
+		// 	return res.send({"Message": "User Added Successfully."});
+		// }).catch(e=> {
+		// 		console.log(e);
+		// 		return res.send({ Message: JSON.stringify(e)});
+		// })
 
-		// const schema2= await collection2.educationalInfo.find();
+// schema1.forEach(async (key)=> {
+		// 	const obj= {};
+		// 	const uniqueID= key._id;
+		// 	const element2=  await collection2.educationalInfo.findOne({uniqueID});
+		// 	const eduInfo= element2.eduInfo;
+		// 	const element3=  await collection3.userDetails.findOne({uniqueID});
+		// 	const personalInfo= element3.personalInfo;
+		// 	console.log(element2);
+		// 	console.log(element2.eduInfo);
 
-		const value= await collection1.credentials.aggregate([
-			{
-				$lookup:
-				{
-					from: "collection2.educationalinfos",
-					localField: "_id.str",
-					foreignField: "uniqueID.str",
-					as: "educationInfo"
-				}
-			}
-			// {
-			// 	$unwind: "$educationInfo"
-			// },
-			// {
-			// 	$project: {
-			// 		eduInfo: "$educationInfo.eduInfo",
-			// 		username: 1
-			// 	}
-			// }
-		])
-		console.log(value);
-		res.send(value);
-		// console.log(value);
-	}
-	catch (err) {
-		console.log(err);
-		res.send(err);
-	}
-}
+		// 	obj["username"]= key.username;
+		// 	obj["eduInfo"]= eduInfo;
+		// 	obj["personalInfo"]= personalInfo;
+
+		// 	response.push(obj);
+		// })
+
+		// / schema1.forEach((key1)=> {
+			// 			const obj= {};
+			// 			const uid= key1._id;
+			// 			obj["username"]= key1.username;
+			// 			schema2.forEach((key2)=> {
+			// 				if(key2.uniqueID=== uid){
+			// 					obj["eduInfo"]= key2.eduInfo;
+			// 					return;
+			// 				}
+			// 			})
+			// 			schema3.forEach((key3)=> {
+			// 				if(key3.uniqueID=== uid){
+			// 					obj["personalInfo"]= key3.personalInfo;
+			// 					return;
+			// 				}
+			// 			})
+			// 			response.push(obj);
+			// 		})
 
 // const schema1= await collection1.credentials.find().lean();
 		// const schema2= await collection2.educationalInfo.find().lean();
@@ -84,7 +93,7 @@ exports.getAll = async (req, res) => {
 		// 	response.push(obj);
 		// })
 
-		// res.send(response);
+// res.send(response);
 
 		// const promise1 = new Promise(async (resolve, reject) => {
 		// 	const schema1 = await collection1.credentials.find().lean();
