@@ -1,0 +1,16 @@
+{
+    "name": "nodeusers",
+    "version": "1.0.0",
+    "description": "NodeUsers",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Soumya",
+    "license": "ISC",
+    "dependencies": {
+      "bcrypt": "^5.0.1",
+      "express": "^4.18.2",
+      "shortid": "^2.2.16"
+    }
+  }
