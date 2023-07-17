@@ -1,6 +1,6 @@
 const collection1 = require("../models/credentials.js");
-const collection2 = require("../models/educationalInfo.js");
-const collection3 = require("../models/userDetails.js");
+// const collection2 = require("../models/educationalInfo.js");
+// const collection3 = require("../models/userDetails.js");
 
 exports.getAll = async (req, res) => {
 	const response = [];
